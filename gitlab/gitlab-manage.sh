@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "--- SETTING UP GITLAB_HOME environment variable ----"
+
+export GITLAB_HOME=/srv/gitlab
+
 echo "---REMOVE OLD GITLAB CONTAINER IF EXISTS ----"
 
 docker rm -f gitlab || true
