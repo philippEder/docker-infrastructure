@@ -12,7 +12,7 @@ RUN curl -O https://download.java.net/java/GA/jdk14.0.2/205943a0976c4ed48cb16f10
     rm -fv openjdk-14.0.2_linux-x64_bin.tar.gz 
 
 ENV JAVA_HOME /jdk-14.0.2
-ENV PATH="{$JAVA_HOME}/bin:${PATH}"
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 
 RUN mkdir /usr/src/temp1 && \ 
